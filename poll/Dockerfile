@@ -1,7 +1,7 @@
-FROM python:3.11.5-slim as base
+FROM python:3
 ENV FLASK_APP=app.py
 WORKDIR /app
-COPY . .
+COPY . /app
 
 RUN pip3 install -r requirements.txt
 
